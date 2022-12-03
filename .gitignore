@@ -1,2 +1,9 @@
 *.txt
 *.o
+*.exe
+*.fsproj
+*.dll
+Program.fs
+.vscode
+bin
+obj
