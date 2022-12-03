@@ -9,17 +9,17 @@ def priority(c):
     
     return ord(c) - ord('A') + 27
     
-def group_priority(group):
+def groups_priority(groups):
     reducer = lambda acc, group: set(acc) & set(group)
-    return priority(reduce(reducer, group).pop())
+    return priority(reduce(reducer, groups).pop())
 
 def rucksack_priority(line):
     size = len(line) // 2
-    return group_priority((line[:size], line[size:]))
+    return groups_priority((line[:size], line[size:]))
 
 
 lines = stdin.read().splitlines()
 groups = [lines[i:i+GROUP_SIZE] for i in range(0, len(lines), GROUP_SIZE)]
 
 print(sum(map(rucksack_priority, lines)))
-print(sum(map(group_priority, groups)))
+print(sum(map(groups_priority, groups)))
