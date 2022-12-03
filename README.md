@@ -5,5 +5,5 @@ Inputs taken from stdin unless specified otherwise.
 |Day|Python|F#|Pascal|
 |-|-|-|-|
 |1|✔️|✔️|✔️|
-|2|✔️|||
+|2|✔️|✔️||
 |3|✔️|||
