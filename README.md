@@ -7,4 +7,4 @@ Inputs taken from stdin unless specified otherwise.
 |1|✔️|✔️|✔️||
 |2|✔️|✔️||✔️|
 |3|✔️||||
-|4||✔️|||
+|4||✔️||✔️|
