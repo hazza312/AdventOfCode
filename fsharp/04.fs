@@ -12,7 +12,7 @@ let rec readLines () =
 let oneIsStrictSuperset (a, b) = 
     Set.intersect a b |> Set.count = Math.Min ((Set.count a), (Set.count b))
 
-let oneIsSuperset (a, b) = 
+let hasItemsInCommon (a, b) = 
     not (Set.intersect a b |> Set.isEmpty)
 
 
@@ -21,4 +21,4 @@ let main =
     let countWhen f = List.fold (fun acc i -> acc + if (f i) then 1 else 0) 0
 
     countWhen oneIsStrictSuperset parsed |> printfn "%d"
-    countWhen oneIsSuperset parsed |> printfn "%d"
+    countWhen hasItemsInCommon parsed |> printfn "%d"
