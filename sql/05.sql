@@ -4,9 +4,9 @@
 
 -- reset state
 DROP VIEW IF EXISTS commands;
-DROP TABLE IF EXISTS day05, buf;
-CREATE TABLE day05 (id SERIAL, crate CHAR, stack INT);
-CREATE INDEX idx_stack ON day05 (stack);
+DROP TABLE IF EXISTS stacks, buf;
+CREATE TABLE stacks (id SERIAL, crate CHAR, stack INT);
+CREATE INDEX idx_stack ON stacks (stack);
 CREATE TABLE buf (id SERIAL, line VARCHAR(255));
 
 -- read initial stack and commands into buffer table
@@ -17,7 +17,7 @@ SELECT id as endcrateline FROM buf WHERE SUBSTR(line, 2, 1) = '1' \gset
 
 -- insert the initial items from the stack
 WITH ids AS (SELECT generate_series AS i FROM generate_series(1, 9))
-INSERT INTO day05 (stack, crate)
+INSERT INTO stacks (stack, crate)
 SELECT      i AS stack, SUBSTR(buf.line, 2 + 4 * (i-1), 1) AS chr 
 FROM        buf 
 CROSS JOIN  ids 
@@ -45,15 +45,15 @@ BEGIN
     FOR cmd in SELECT n, src, dst FROM commands 
     LOOP
         WITH deletion as (
-            DELETE FROM day05
+            DELETE FROM stacks
             WHERE id IN (SELECT     id 
-                        FROM        day05
+                        FROM        stacks
                         WHERE       stack = cmd.src 
                         ORDER BY    id DESC 
                         LIMIT       cmd.n)
             RETURNING id, crate
         )
-        INSERT INTO day05 (crate, stack) 
+        INSERT INTO stacks (crate, stack) 
         SELECT      crate, cmd.dst 
         FROM        (SELECT     crate
                     FROM        deletion
@@ -66,9 +66,9 @@ $$;
 WITH top_ids AS (
     SELECT      MAX(id) as id 
     FROM        generate_series(1, 9) 
-    JOIN        day05 ON day05.stack = generate_series
+    JOIN        stacks ON stacks.stack = generate_series
     GROUP BY    generate_series 
     ORDER BY    generate_series ASC
 )
 SELECT  STRING_AGG(crate, '') AS result
-FROM    (SELECT crate from top_ids JOIN day05 USING (id) ORDER BY stack) as _;
+FROM    (SELECT crate from top_ids JOIN stacks USING (id) ORDER BY stack) as _;
