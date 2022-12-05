@@ -6,33 +6,33 @@ MOVE_REGEX = re.compile(r"move (\d+) from (\d+) to (\d+)")
 
 
 def read_stack_line(line):
-    return [line[i] for i in range(1, NUM_STACKS * 4, 4) if i < len(line)]
+    return [(i, line[i*4+1]) for i in range(NUM_STACKS) 
+                if i < len(line) and line[i*4+1] != ' ']
 
 def read_stacks(lines):
     stacks = [[] for _ in range(NUM_STACKS)]
 
     for lineno, line in enumerate(lines):
-        stack_line = read_stack_line(line)
-        if stack_line[0].isdigit():
-            break
-        
-        for i, top_of_stack in enumerate(stack_line):
-            if top_of_stack != ' ':
-                stacks[i].insert(0, top_of_stack)
+        if line.startswith(" 1"):
+            break 
+
+        for i, next_top in read_stack_line(line):
+            stacks[i].insert(0, next_top)
 
     return stacks, lines[lineno+2:]
 
 def cratemover_9000(stacks, n, src, dst):
-    stacks[dst - 1] += stacks[src - 1][:-n-1:-1]
-    stacks[src - 1] = stacks[src - 1][:-n]
+    stacks[dst] += stacks[src][:-n-1:-1]
+    stacks[src] = stacks[src][:-n]
 
 def cratemover_9001(stacks, n, src, dst):
-    stacks[dst - 1] += stacks[src - 1][-n:]
-    stacks[src - 1] = stacks[src - 1][:-n]    
+    stacks[dst] += stacks[src][-n:]
+    stacks[src] = stacks[src][:-n]    
 
 def do_moves(stacks, moves, mover):
     for move in moves:
-        mover(stacks, *map(int, MOVE_REGEX.match(move).groups()))
+        n, src, dst = map(int, MOVE_REGEX.match(move).groups())
+        mover(stacks, n, src-1, dst-1)
 
     return ''.join(s[-1] for s in stacks if len(s) > 0)
 
