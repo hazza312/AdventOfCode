@@ -8,3 +8,4 @@ Inputs taken from stdin unless specified otherwise.
 |2|✔️|✔️||✔️|
 |3|✔️||||
 |4||✔️||✔️|
+|4|✔️||||
