@@ -15,6 +15,6 @@ SELECT  ('[' || REPLACE(l, '-', ',') || ']')::numrange AS l,
 FROM    day04_buf;
     
 -- query
-SELECT  SUM(CASE WHEN l @> r OR r @> l THEN 1 ELSE 0 END) AS part1,
-        SUM(CASE WHEN l && r THEN 1 ELSE 0 END) AS part2
+SELECT  SUM((l @> r OR r @> l)::int) AS part1,
+        SUM((l && r)::int) AS part2
 FROM    day04_ranges;   
