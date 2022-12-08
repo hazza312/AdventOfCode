@@ -1,9 +1,10 @@
 from sys import stdin
 from functools import reduce
+from itertools import product
 from operator import mul
 
 def all_coords(grid):
-    return [(x, y) for y in range(len(grid)) for x in range(len(grid[0]))]
+    return product(range(len(grid[0])), range(len(grid)))
 
 def rays(grid, x, y):
     """
@@ -41,7 +42,7 @@ def scenic_in_direction(grid, x, y, ray):
 
 def scenic_score(grid, c):
     direction_scores = (scenic_in_direction(grid, *c, r) for r in rays(grid, *c))
-    return reduce(mul, direction_scores, 1)
+    return reduce(mul, direction_scores)
 
 def max_scenic_score(grid):
     return max(scenic_score(grid, c) for c in all_coords(grid))
