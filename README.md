@@ -11,3 +11,4 @@ Inputs taken from stdin unless specified otherwise.
 |5|✔️||||✔️|||
 |6|✔️|||||✔️||
 |7|✔️|✔️||||||
+|8|✔️|||||||
