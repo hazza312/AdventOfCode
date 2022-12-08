@@ -3,7 +3,7 @@ from functools import reduce
 from operator import mul
 
 def all_coords(grid):
-    return [(x, y) for y in range(len(grid)    ) for x in range(len(grid[0]))]
+    return [(x, y) for y in range(len(grid)) for x in range(len(grid[0]))]
 
 def rays(grid, x, y):
     """
