@@ -12,3 +12,4 @@ Inputs taken from stdin unless specified otherwise.
 |6|[✔️](python/06.py)|||||[✔️](java/Day06.java)|[✔️](apl/06.apl)|
 |7|[✔️](python/07.py)|[✔️](fsharp/07.fsx)||||||
 |8|[✔️](python/08.py)|||||||
+|9|[✔️](python/09.py)|||||||
