@@ -13,3 +13,4 @@ Inputs taken from stdin unless specified otherwise.
 |7|[✔️](python/07.py)|[✔️](fsharp/07.fsx)||||||
 |8|[✔️](python/08.py)|||||||
 |9|[✔️](python/09.py)|||||||
+|10||||||[✔️](java/Day10.java)||
