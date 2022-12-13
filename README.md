@@ -16,16 +16,4 @@ Inputs taken from stdin unless specified otherwise.
 |9|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/09.py) |
 |10|   [📄 AWK](awk/10.awk)  [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height: 1em; vertical-align:middle"> Java](java/Day10.java) |
 |11|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/11.py) |
-
-
-## Solutions by Language
-|Language|n|%n|Shortest|Longest|Average|%sloc|
-|-|-|-|-|-|-|-|
-<img src="_misc/apl.png" alt="APL" style="height: 1em; vertical-align:middle"> APL|2|7.4%|5|7|6|1.7%|
-📄 AWK|4|14.8%|15|26|20|11.0%|
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" style="height: 1em; vertical-align:middle"> C|2|7.4%|12|18|15|4.2%|
-<img src="_misc/fsharp.png" alt="F#" style="height: 1em; vertical-align:middle"> F#|4|14.8%|9|32|21|11.8%|
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height: 1em; vertical-align:middle"> Java|3|11.1%|23|81|49|20.8%|
-📄 Pascal|1|3.7%|38|38|38|5.4%|
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python|9|33.3%|5|51|27|34.1%|
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL" style="height: 1em; vertical-align:middle"> SQL|2|7.4%|14|64|39|11.0%|
+|13|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/13.py) |
