@@ -81,7 +81,7 @@ public class Day12 {
             grid.add(in.nextLine().toCharArray());
         }
 
-        System.out.println(findMinPathLength('S', "zE", true));
+        System.out.println(findMinPathLength('S', "E", true));
         System.out.println(findMinPathLength('E', "Sa", false));
     }
 }
