@@ -18,4 +18,5 @@ Inputs taken from stdin unless specified otherwise.
 |11|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/11.py) |
 |12|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height: 1em; vertical-align:middle"> Java](java/Day12.java) |
 |13|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/13.py) |
+|14|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/14.py) |
 |15|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height: 1em; vertical-align:middle"> Java](java/Day15.java) |
