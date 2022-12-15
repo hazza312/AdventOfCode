@@ -16,5 +16,6 @@ Inputs taken from stdin unless specified otherwise.
 |9|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/09.py) |
 |10|   [📄 AWK](awk/10.awk)  [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height: 1em; vertical-align:middle"> Java](java/Day10.java) |
 |11|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/11.py) |
+|12|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height: 1em; vertical-align:middle"> Java](java/Day12.java) |
 |13|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](python/13.py) |
 |15|   [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" style="height: 1em; vertical-align:middle"> Java](java/Day15.java) |
