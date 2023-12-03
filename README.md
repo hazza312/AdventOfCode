@@ -3,9 +3,11 @@ My attempts of some [Advent of Code](https://adventofcode.com/) puzzles.
 Inputs taken from stdin unless specified otherwise.
 
 ## 2023
-|Day| Solution |
-|-|----------|
-|1| ?        |
+| Day | Solution                                                                                                                                                                      |
+|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/01.py)                                                                                                                                                                             |
+| 2   |  |
+| 3   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/03.py) |
 
 ## 2022
 |Day|Solution|
