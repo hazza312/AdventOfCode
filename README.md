@@ -10,7 +10,7 @@ Inputs taken from stdin unless specified otherwise.
 | 3   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/03.py) |
 | 4   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/04.py) |
 | 5   |                                                                                                                                                                               |
-| 6   |                                                                                                                                                                               |
+| 6   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/06.py) |
 | 7   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/07.py) |
 | 8   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/08.py) |
 | 9   | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 1em; vertical-align:middle"> Python](2023/python/09.py) |
