@@ -2,13 +2,13 @@ from collections import Counter
 import sys
 
 COUNT_RANKING = [  # in ascending score order
-    (1, 1, 1, 1, 1),  # five of a kind
-    (1, 1, 1, 2),  # four of a kind
-    (1, 2, 2),  # full house
+    (1, 1, 1, 1, 1),  # high card
+    (1, 1, 1, 2),  # one pair
+    (1, 2, 2),  # two pair
     (1, 1, 3),  # three of a kind
-    (2, 3),  # two pair
-    (1, 4),  # one pair
-    (5,)  # high card
+    (2, 3),  # full house
+    (1, 4),  # four of a kind
+    (5,)  # five of a kind
 ]
 
 
