@@ -15,7 +15,7 @@ def part1(antennae, max_x, max_y):
             antinodes.add(a - diff)
             antinodes.add(b + diff)
 
-    return len([p for p in antinodes if in_range(p, max_x, max_y)])
+    return sum(in_range(p, max_x, max_y) for p in antinodes)
 
 
 def part2(antennae, max_x, max_y):
@@ -36,20 +36,16 @@ def part2(antennae, max_x, max_y):
 
 def main(f):
     antennae = {}
-    max_y = 0
-    max_x = 0
     for y, line in enumerate(f):
-        max_y = y
         for x, c in enumerate(line.strip()):
             if c != '.':
                 if c not in antennae:
                     antennae[c] = []
 
                 antennae[c].append(xy(x, y))
-            max_x = x
 
-    print(part1(antennae, max_x, max_y))
-    print(part2(antennae, max_x, max_y))
+    print(part1(antennae, x, y))
+    print(part2(antennae, x, y))
 
 
 if __name__ == '__main__':
