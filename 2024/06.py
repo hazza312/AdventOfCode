@@ -26,12 +26,13 @@ def has_loop(M, curr, d):
     visited = set()
     while in_range(M, curr):
         visited.add((curr, d))
-        if get(M, curr + d) == '#':
+        next = curr + d
+        if (next, d) in visited:
+            return True
+        if get(M, next) == '#':
             d *= xy(0, 1)
         else:
-            curr += d
-            if (curr, d) in visited:
-                return True
+            curr = next
 
     return False
 
